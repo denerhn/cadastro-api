@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <section id="cadastro">
+        <div class="container">
+            <h1>Cadastro</h1>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputtext4" class="form-label">Nome *</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="Nome">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputtext4" class="form-label">Sobrenome *</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="Sobrenome">
+                </div>
+                <div class="col-4">
+                    <label for="inputAddress" class="form-label">CEP *</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="cep" placeholder="" onblur="viaCep()">
+                </div>
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">Rua</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="rua">
+                </div>
+                <div class="col-md-2">
+                    <label for="inputtext4" class="form-label">Numero *</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="numero">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputtext4" class="form-label">Bairro</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="bairro">
+                </div>
+                <div class="col-4">
+                    <label for="inputAddress2" class="form-label">UF</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="uf" placeholder="">
+                </div>
+                <div class="col-md-4">
+                    <label for="inputZip" class="form-label">Cidade</label>
+                    <input type="text" class="form-control campo-obrigatorio" id="localidade">
+                </div>
+                
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary" onclick="Cadastrar()">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
